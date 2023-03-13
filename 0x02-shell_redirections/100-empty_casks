@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -mindepth 1 -empty -printf '%h\n' | sort -u | xargs -I{} sh -c 'for i in {}; do printf "%s\n" "${i##*/}"; done'
+find . -mindepth 1 -empty -printf "%f\n"
