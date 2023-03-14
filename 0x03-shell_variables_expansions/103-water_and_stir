@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "obase=bestchol; $(echo "$WATER" | tr 'abcdefghijklmnopqrstuvwxyz' '0123456789abcdef') + $(echo "$STIR" | tr 'abcdefghijklmnopqrstuvwxyz' '0123456789abcdef')" | bc
